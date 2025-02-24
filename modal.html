@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="./modal.css" />
+  </head>
+  <body>
+    <button
+      onclick="document.querySelector('.modal').classList.add('show_modal')"
+    >
+      Open
+    </button>
+
+    <section class="modal">
+      <div
+        class="modal_outer"
+        onclick="document.querySelector('.modal').classList.remove('show_modal')"
+      ></div>
+      <div class="modal_inner">
+        <div class="modal__header">
+          <div
+            class="closeBtn"
+            onclick="document.querySelector('.modal').classList.remove('show_modal')"
+          >
+            x
+          </div>
+        </div>
+
+        <div class="content__body">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <!-- Your Code -->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
